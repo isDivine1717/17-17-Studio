@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-  <script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  darkMode: 'class',
-  theme: { extend: { colors: { 'oro': '#D4AF37' } } }
-}
-</script>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>17-17 Studio</title>
+
+    <!-- Tailwind solo UNA vez -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
+              oro: '#D4AF37',
               background: '#050505',
               surface: '#121212',
               primary: '#ffffff',
@@ -25,11 +22,12 @@ tailwind.config = {
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
-            }
-          }
-        }
-      }
+            },
+          },
+        },
+      };
     </script>
+
     <style>
       body {
         background-color: #050505;
@@ -56,19 +54,20 @@ tailwind.config = {
         border: 1px solid rgba(255, 255, 255, 0.08);
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
-</head>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      }
+    }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
   </body>
